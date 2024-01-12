@@ -1,0 +1,10 @@
+{
+    "login":{
+    "title":"مرحبا بعودتك !",
+    "description":"تسجيل الدخول للمتابعة",
+    "username":"اسم المستخدم",
+    "username_placeholder":"أدخل اسم المستخدم",
+    "password":"كلمة المرور",
+    "password_placeholder":" كلمة المرور",
+    "btn":" تسجيل الدخول"}
+}

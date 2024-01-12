@@ -1,0 +1,19 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Variables
+@import 'variables';
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+.add-select-row {
+    width: 40px;
+    font-size: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.select-row-container {
+    display: flex;
+    align-items: center;
+}

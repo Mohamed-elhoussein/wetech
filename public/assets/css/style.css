@@ -1,0 +1,179 @@
+.remove-select-row,
+.add-select-row {
+    width: 40px;
+    font-size: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10px 0px;
+    margin-left: 10px;
+}
+
+.select-row-container {
+    display: flex;
+    align-items: center;
+}
+
+.bx-trash-alt:before {
+    color: #F46A6A;
+}
+
+.bx-book-open:before {
+    color: #34C38F;
+}
+
+.bx-pencil:before {
+    color: #34C38F;
+}
+
+.bx-block:before {
+    color: #6a87ff;
+}
+
+.bx-user-circle:before {
+    color: #34c38f;
+}
+
+table thead tr th {
+    font-weight: 800 !important;
+}
+
+#sidebar-menu ul li a i {
+    background: red;
+    padding: 5px;
+    border-radius: 6px;
+    background: linear-gradient(to right, #3F5EFB, #FC466B);
+    color: white !important;
+    margin-left: 14px;
+}
+
+#sidebar-menu ul li a .icon {
+    background: red;
+    padding: 5px;
+    border-radius: 6px;
+    background: linear-gradient(to right, #3F5EFB, #FC466B);
+    color: white !important;
+    margin-left: 14px;
+}
+
+.vertical-menu li.mm-active {
+    background: initial;
+    color: white !important;
+    margin-left: 14px;
+}
+
+.vertical-menu li.mm-active {
+    background: initial;
+}
+
+.row__rate {
+    height: 10px;
+    width: 77%;
+    background-color: #9f9f9f;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 0.25rem;
+}
+
+
+/* Cards */
+
+
+/*! CSS Used from: https://rawal-admin.themes-coder.net/assets/css/style.css?v=1.0 */
+
+.card__title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.card__title {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.card__title {
+    font-size: 1.50rem;
+}
+
+.gutter-b {
+    margin-bottom: 30px;
+}
+
+.card-custom.gutter-b {
+    height: calc(100% - 30px);
+}
+
+.card-custom {
+    display: flex;
+    align-items: stretch!important;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.theme-circle {
+    overflow: hidden;
+}
+
+.theme-circle:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 120px;
+    height: 120px;
+    opacity: 0.5;
+    border-radius: 200px;
+}
+
+.theme-circle:after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: -30px;
+    width: 80px;
+    height: 80px;
+    opacity: 0.2;
+    border-radius: 200px;
+}
+
+.theme-circle-primary:before {
+    background-color: #cfa5f9;
+}
+
+.theme-circle-primary:after {
+    background-color: #cfa5f9;
+}
+
+.theme-circle-secondary:before {
+    background-color: #f9c47f;
+}
+
+.theme-circle-secondary:after {
+    background-color: #f9c47f;
+}
+
+.theme-circle-success:before {
+    background-color: #7eca90;
+}
+
+.theme-circle-success:after {
+    background-color: #7eca90;
+}
+
+.theme-circle-info:before {
+    background-color: #66b0ff;
+}
+
+.theme-circle-info:after {
+    background-color: #66b0ff;
+}
+
+.custom__avatar {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
