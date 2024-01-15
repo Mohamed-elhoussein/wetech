@@ -17,6 +17,9 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/custom.css?ver={{ time() }}" rel="stylesheet">
     <style>
+        .red_p::placeholder{
+            color:red;
+        }
         .wtsp {
             position: fixed;
             bottom: 30px;
@@ -73,6 +76,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto me-3 top-link">
+
+
                     <li class="nav-item">
                         @auth
                             <a class="nav-link" href="{{ route('store.my_orders') }}">
@@ -87,6 +92,14 @@
                             <span class="me-1">المنتوجات</span>
                         </a>
                     </li>
+                            <li class="nav-item">
+                        <a class="nav-link" href="{{ route('requst/services') }}">
+                            <i class="bi bi-shop fs-6"></i>
+                            <span class="me-1">طلب خدمه</span>
+                        </a>
+                    </li>
+
+
                     @foreach (\App\Models\ProductCategories::all() as $cat)
                     <li class="nav-item">
                         <a class="nav-link no-icon" href="{{ route('store.by_category', ['category' => $cat]) }}">
@@ -131,6 +144,7 @@
                             تسجيل الدخول
                         </a>
                     @endif
+                    
                 </div>
             </div>
         </div>
@@ -432,6 +446,49 @@
     <script src="assets/js/app.js?ver={{ time() }}"></script>
 
     @yield('js')
+    <script>
+    $(".form_services").submit(function(e){
+        e.preventDefault();
+        var phone=$(".phone").val();
+        var phone_type=$(".phone_type").val();
+        var model=$(".model").val();
+        var color=$(".color").val();
+        var problem=$(".problem").val();
+        var city=$(".city").val();
+        var comments=$(".comments").val();
+
+        if(!phone){ $(".phone").attr("placeholder","من فضلك اكتب رقم الهاتف").addClass("red_p"); }
+        if(!phone_type){ $(".phone_type").attr("placeholder","من فضلك اكتب نوع الهاتف").addClass("red_p"); }
+        if(!model){ $(".model").attr("placeholder","من فضلك اكتب الموديل").addClass("red_p"); }
+        if(!color){ $(".color").attr("placeholder","من فضلك اكتب لون الهاتف").addClass("red_p"); }
+        if(!problem){ $(".problem").attr("placeholder"," من فضلك اضع وصف للمشكله").addClass("red_p"); }
+        if(!city){ $(".city").attr("placeholder","من فضلك اكتب المدينه").addClass("red_p"); }
+
+        if(phone && phone_type && model && color && problem && city){
+            $.post("{{ route('data/services') }}",
+            {
+                phone:phone,
+                phone_type:phone_type,
+                model:model,
+                color:color,
+                problem:problem,
+                city:city,
+                comments:comments
+            },function(data){
+                $("._service").html(data);
+            });
+        setTimeout(function(){
+                $(".phone").val("");
+                $(".phone_type").val("");
+                $(".model").val("");
+                $(".color").val("");
+                $(".problem").val("");
+                $(".city").val("");
+                $(".comments").val("");
+        },3000);
+        }
+    });
+    </script>
 </body>
 
 </html>

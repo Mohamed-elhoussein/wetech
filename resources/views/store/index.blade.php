@@ -161,12 +161,22 @@ footer {
                 <span>الاكسسوارات</span>
 
             </div>
+
             <div class="boxs">
             <a href="https://drtech-api.com/1/products">
                 <img src="/ramadan/cat3.png" >
                 </a>
 
                 <span>قسم الجوالات</span>
+
+            </div>
+        </div>
+            <div class="boxs">
+            <a href="https://drtech-api.com/1/products">
+                <img src="/ramadan/cat3.png" >
+                </a>
+
+                <span>الخدمات</span>
 
             </div>
         </div>

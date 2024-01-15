@@ -37,14 +37,11 @@ class UserController extends Controller
      *
      * @return void
      */
-    public function __construct(
-        CsvExporterService $exporterService
-    ) {
-        $this->exporterService = $exporterService;
-    }
+
 
     public function admins(Request $request)
     {
+        // $user=User::all();
         $users =   User::where([
             ['role', 'admin'],
             [function ($query) use ($request) {

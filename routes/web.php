@@ -76,6 +76,8 @@ use Symfony\Component\DomCrawler\Crawler;
 |
 */
 
+require_once('RequestService.php');
+
 Route::get('/file/{filepath}', [FileController::class, 'download']);
 
 

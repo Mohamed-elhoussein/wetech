@@ -6,6 +6,7 @@
         <div id="sidebar-menu">
             <!-- Left Menu Start -->
             <ul class="metismenu list-unstyled fs-3" id="side-menu">
+            
                 @php
                     $paths = [];
                     foreach (menu() as $path) {

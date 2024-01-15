@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\Hash;  
+use Illuminate\Support\Facades\Hash;
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
     {
          \App\Models\User::create([
 
-        'email' => 'email@email.com',
+        'email' => 'mohamed.elhoussein.a@gmail.com',
         'username' => 'admin',
         'number_phone' => '00000000',
         'role' => 'admin',
